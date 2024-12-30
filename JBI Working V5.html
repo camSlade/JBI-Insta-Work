@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calgary's premier mobile sandblasting service. Professional surface restoration and cleaning services.">
+    <meta name="keywords" content="sandblasting, Calgary, surface restoration, cleaning, exposed aggregate, sandblasting professionals, contractor selection, construction restoration, service quality, professional certification, abrasive blasting, surface preparation, safety protocols, containment systems, mobile sandblasting, home restoration, surface cleaning, eco-friendly cleaning, property maintenance, sandblasting projects, historic restoration, industrial preparation, graffiti removal, pool resurfacing, marine restoration, sandblasting costs, surface preparation comparison, construction costs, maintenance expenses">
+    <meta property="og:title" content="Just Blast It Ltd - Calgary Mobile Sandblasting">
+    <meta property="og:description" content="Professional sandblasting services in Calgary">
+    <meta property="og:image" content="https://i.postimg.cc/Px7gPPFb/Just-Blast-It-Logo-Color.jpg">
+    <title>Just Blast It Ltd - Calgary Mobile Sandblasting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Just Blast It Ltd",
+            "image": "https://i.postimg.cc/Px7gPPFb/Just-Blast-It-Logo-Color.jpg",
+            "description": "Calgary's premier mobile sandblasting service",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "4808 Forego Ave SE",
+                "addressLocality": "Calgary",
+                "addressRegion": "Alberta",
+                "postalCode": "T2A 2C3",
+                "addressCountry": "CA"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "51.0447",
+                "longitude": "-114.0719"
+            },
+            "url": "https://justblastit.ca",
+            "telephone": "+1-403-248-0721",
+            "areaServed": "Calgary and surrounding 200km radius"
+        }
+        </script> 
+    <style>
+        /* CSS Styles*/
+        :root {
+            --primary: #011689;
+            --secondary: #ffffff;
+            --accent: #cc4b07;
+            --gray: #f5f5f5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            position: relative;
+            min-height: 100vh
+        }
+
+        /* Navigation */
+        .nav-toggle {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            z-index: 1000;
+            cursor: pointer;
+            color: var(--primary);
+            background: var(--secondary);
+            opacity: 0.8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .nav-menu {
+            position: fixed;
+            left: -250px;
+            top: 0;
+            width: 150px;
+            height: 100vh;
+            background: var(--primary);
+            opacity: 0.85;
+            padding: 80px 20px;
+            transition: 0.3s;
+            z-index: 999;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-menu a {
+            color: var(--secondary);
+            text-decoration: none;
+            display: block;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        .nav-menu a:hover {
+            color: var(--accent)
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75vw; /* 50% of viewport width */
+            max-width: none;
+            min-width: none;
+            z-index: 2;
+        }
+
+        .hero-logo img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 20px;
+            font-size: 2.5em;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            margin-bottom: 40px;
+            color: var(--accent);
+        }
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: var(--gray);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+}
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-image-container {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .service-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover .service-image {
+            transform: scale(1.1);
+        }
+
+        .service-card h3 {
+            color: var(--primary);
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+
+        .service-card p {
+            color: #666;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .map-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        @media (max-width: 768px) {
+            .social-links {
+                grid-template-columns: repeat(4, 35px);
+                gap: 10px;
+            }
+
+            .social-links a {
+                width: 35px;
+                height: 35px
+            }
+
+            .social-links i {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .social-links {
+                grid-template-columns: repeat(4, 30px);
+                gap: 8px;
+            }
+
+            .social-links a {
+                width:30px;
+                height: 30px;
+            }
+
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            box-shadow: 5px 10px 18px #000000
+        }
+
+        .project-card:hover {
+         transform: translateY(-5px);
+        }
+        
+        .project-video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .project-caption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: var(--secondary);
+            padding: 10px;
+        }
+
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .review-card {
+            background: var(--secondary);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 5px 10px 18px #000000
+        }
+
+        .review-stars {
+            color: gold;
+            margin-bottom: 10px;
+        }
+
+        /* Quote Form */
+        .quote-bar {
+            position: fixed; 
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: var(--primary);
+            color: var(--secondary);
+            opacity: 0.8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1001;
+            transition: position 0.3s ease;
+        }
+
+        .quote-bar:hover {
+            color: var(--accent);
+            cursor: pointer;
+        }
+
+        .quote-form.active {
+            display: block;
+        }
+
+        .quote-bar.at-footer {
+            position: absolute;
+            bottom: 100%; /* Position above footer */
+        }
+
+        .quote-form {
+            display: none;
+            position: fixed;
+            bottom: 50px;
+            left: 0;
+            width: 100%;
+            background: var(--gray);
+            padding: 20px;
+            z-index: 1000;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .quote-form.active {
+            display: block;
+        }
+
+        .quote-form.at-footer {
+            position: absolute;
+            bottom: calc(100% + 50px);
+        }
+
+        .quote-bar, .quote-form {
+            transition: bottom 0.3s ease-out;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .form-description {
+            grid-column: span 2;
+        }
+
+        .confirmation-message {
+            color: green;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+
+        .submit-btn {
+            background: var(--accent);
+            color: var(--secondary);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            height: 40px;
+            box-shadow: 5px 10px 18px #000000;
+            position: relative; /* Set relative positioning for the spinner to be positioned absolutely within the button */
+            display: flex; /* Use flexbox to center content */
+            align-items: center; /* Center items vertically */
+            justify-content: center; /* Center items horizontally */
+        }
+
+        .loading-spinner {
+            display: none; /* Hide spinner by default */
+            width: 20px; /* Smaller spinner size */
+            height: 20px; /* Smaller spinner size */
+            border: 4px solid #f3f3f3; /* Spinner border */
+            border-top: 4px solid var(--primary); /* Spinner border top color */
+            border-radius: 50%; /* Make spinner round */
+            animation: spin 1s linear infinite; /* Spinner animation */
+            position: absolute; /* Position spinner absolutely within the button */
+            z-index: 1; /* Ensure spinner is above button text */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Hide the button text when the spinner is visible */
+        .submit-btn.loading span {
+            visibility: hidden;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* Jump to top */
+        .jump-top {
+            position: fixed;
+            right: 20px;
+            bottom: 70px;
+            background: var(--accent);
+            color: var(--secondary);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: 0.3s;
+            z-index: 996;
+        }
+
+        .jump-top.visible {
+            opacity: 1;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--secondary);
+            padding: 40px 20px;
+            position:relative;
+            z-index: 999;
+            margin-bottom: 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: start;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px; /* Even spacing between icons*/
+            align-items: flex-end;
+        }
+
+        .social-links a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:#ffffff;
+            width: 40px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a i {
+            font-size: 20px;
+        }
+
+        .social-links a:hover {
+            color: var(--accent)
+        }
+
+        .social-links a::after,
+        .social-links a::before {
+            display: none;
+        }
+
+        .social-links h3 {
+            margin: 0;
+            align-self: flex-end;
+            color: var(--secondary);
+        }
+
+        .social-icons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 40px);
+            gap: 15px;
+            justify-content: end;
+        }
+
+        .social-icons-grid a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons-grid i {
+            font-size: 20px;
+        }
+
+        /* Loading State Styles */
+        .loading-spinner {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Form Validation Styles */
+        .form-group {
+            position: relative;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 0.8em;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+        }
+
+        .form-group input.error,
+        .form-group textarea.error {
+            border-color: red;
+        }
+
+        /* Cookie Consent Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            display: none;
+            z-index: 1000;
+        }
+
+        .cookie-banner.show {
+            display: block;
+        }
+
+        .confirmation-message {
+            color: green;
+            font-size: 1em;
+            margin-top: 10px;
+        }
+    </style>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+       // Initialize EmailJS with your public key
+       (function() {
+           emailjs.init("lAmDFGbQHm648eGMK");
+       })();
+    </script>
+</head>
+<body>
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        <button onclick="acceptCookies()" class="submit-btn">Accept</button>
+    </div>
+    <!-- Navigation -->
+    <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    <nav class="nav-menu">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#about">About</a>
+        <a href="https://www.instagram.com/justblastit/" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="http://www.facebook.com/JustBlastItLtd" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://twitter.com/justblastit" target="_blank">
+            <i class="fab fa-twitter"></i> X
+        </a>
+        <a href="https://www.youtube.com/@justblastit" target="_blank">
+            <i class="fab fa-youtube"></i> YouTube
+        </a>
+        <a href="https://www.tiktok.com/@justblastit" target="_blank">
+            <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        <a href="https://wa.me/14038529877" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="https://www.linkedin.com/company/justblastit" target="_blank">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://www.pinterest.com/justblastit" target="_blank">
+            <i class="fab fa-pinterest"></i> Pinterest
+        </a>
+    </nav>
+
+   <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://www.shutterstock.com/shutterstock/videos/17697916/preview/stock-footage-worker-sandblasting-gas-pipe.webm">
+        </video>
+        <div class="hero-logo">
+            <img src="https://i.postimg.cc/JnJDnmP9/Just-Blast-It-Logo-White.png" alt="Just Blast It Logo">
+            </div>
+        </div>
+    </section>
+
+   <!-- Services Section -->
+    <section id="services">
+        <h2 class="section-title">WHAT WE DO</h2>
+        <H3 class="section-subtitle">From restoration to renovation, we have many ways to save you time and money</H3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://media.angi.com/s3fs-public/exposed-aggregate-concrete-driveway-486375941.jpg" 
+                             alt="Exposed Aggregate" 
+                             class="service-image">
+                    </div>
+                    <h3>Exposed Aggregate</h3>
+                     <p>Restore the natural beauty of your exposed aggregate surfaces. Increase property value and curb appeal.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://i.pinimg.com/736x/19/05/97/190597f0003e10a8325e59362eddab05.jpg" 
+                             alt="Seal Removal" 
+                             class="service-image">
+                    </div>
+                    <h3>Seal Removal</h3>
+                    <p>Professional removal of old sealants and coatings. Prepare surfaces for new treatments.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://www.offshoreonly.com/forums/attachments/northern-illinois-offshore-club/501358d1369481065-trailer-sandblasting-repainting-img_0408.jpg" 
+                            alt="Metal Sandblasting" 
+                            class="service-image">
+                    </div>
+                    <h3>Metal Sandblasting</h3>
+                    <p>Remove rust and old paint from metal surfaces. Extend the life of your metal equipment and structures.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://i.postimg.cc/R0qYqrjw/Dusty-blast-on-steps.jpg" 
+                             alt="Architectural Light Blast" 
+                             class="service-image">
+                    </div>
+                    <h3>Architectural Light Blast</h3>
+                    <p>Expert application of alternating blast types adds a distinct and interesting look where design is key.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://i.pinimg.com/736x/9f/85/a0/9f85a0fe6d933c2176349bd6fb2d4196.jpg" 
+                             alt="Graffiti Removal" 
+                             class="service-image">
+                    </div>
+                    <h3>Graffiti Removal</h3>
+                    <p>Restore surfaces effortlessly with our professional graffiti removal service, ensuring a clean and welcoming appearance for your property.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://i.postimg.cc/Ls7b1Cpw/JBI-Truck-In-Front-of-Job.jpg" 
+                             alt="Fencing and Dust Mitigation" 
+                             class="service-image">
+                    </div>
+                    <h3>Fencing and Dust Mitigation</h3>
+                    <p>Protect your site with effective dust mitigation and durable fencing solutions, maintaining safety and cleanliness throughout your project.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://i.postimg.cc/D0CgWBsN/Pool-Job-In-Deep-End.jpg" 
+                             alt="Big or Small Jobs" 
+                             class="service-image">
+                    </div>
+                    <h3>Big or Small Jobs</h3>
+                    <p>Partner with us for reliable sandblasting services tailored to meet the precise needs of construction industry clients.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-image-container">
+                        <img src="https://i.postimg.cc/9XtX6stb/Two-Walk-Done-Clean.jpg" 
+                             alt="Full Clean Up" 
+                             class="service-image">
+                    </div>
+                    <h3>Full Clean Up</h3>
+                    <p>Enjoy a spotless finish with our comprehensive cleanup service after every project, leaving your site pristine and ready.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Our Projects</h2>
+        <H3 class="section-subtitle">Follow our socials for more projects and latest news</H3>
+        <div class="projects-grid">
+            <div class="project-card" data-instagram-url="https://www.instagram.com/p/your-video-id/">
+                <div class="instagram-embed"></div>
+                <div class="project-caption">Radio Park</div>
+            </div>
+            <div class="project-card" onclick="window.open('project-url-here', '_blank')">
+                <video class="project-video" autoplay muted loop playsinline>
+                    <source src="https://www.shutterstock.com/shutterstock/videos/3408627247/preview/stock-footage-sand-blasting-workplace-industrial-workplace-with-equipment-for-sand-blasting-such-as-helmet.webm" type="video/mp4">
+                </video>
+                <div class="project-caption">Bears Paw</div>
+            </div>
+            <div class="project-card" onclick="window.open('project-url-here', '_blank')">
+                <video class="project-video" autoplay muted loop playsinline>
+                    <source src="https://www.shutterstock.com/shutterstock/videos/1100691253/preview/stock-footage-sand-blasting-process-industrial-worker-with-safety-helmet-inside-a-booth-puts-on-gloves-before-he.webm" type="video/mp4">
+                </video>
+                <div class="project-caption">Red Deer</div>
+            </div>
+            <div class="project-card" onclick="window.open('project-url-here', '_blank')">
+                <video class="project-video" autoplay muted loop playsinline>
+                    <source src="https://www.shutterstock.com/shutterstock/videos/3408627247/preview/stock-footage-sand-blasting-workplace-industrial-workplace-with-equipment-for-sand-blasting-such-as-helmet.webm" type="video/mp4">
+                </video>
+                <div class="project-caption">Logan's Landing</div>
+            </div>
+            <div class="project-card" onclick="window.open('project-url-here', '_blank')">
+                <video class="project-video" autoplay muted loop playsinline>
+                    <source src="https://www.shutterstock.com/shutterstock/videos/1096160925/preview/stock-footage-cleaning-inside-a-heater-by-sand-blast.webm" type="video/mp4">
+                </video>
+                <div class="project-caption">Downtown Calgary</div>
+            </div>
+            <div class="project-card" onclick="window.open('project-url-here', '_blank')">
+                <video class="project-video" autoplay muted loop playsinline>
+                    <source src="https://www.shutterstock.com/shutterstock/videos/1100691253/preview/stock-footage-sand-blasting-process-industrial-worker-with-safety-helmet-inside-a-booth-puts-on-gloves-before-he.webm" type="video/mp4">
+                </video>
+                <div class="project-caption">Chestermere</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Just Blast It Ltd</h2>
+        <H3 class="section-subtitle">A few words after almost 20 years of serving Albertans</H3>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p>Established in 2007, Just Blast It Ltd has built a reputation as Calgary's premier mobile sandblasting service. With years of experience, we proudly serve both large construction clients, including industry leaders like Marmot and Wilco, and homeowners seeking cost-effective solutions for their residential projects.
+
+                Our many specialized services include light-blasting for design applications and resurfacing driveways with exposed aggregate—a popular renovation that can save decrepit driveways from costly replacement. We understand the importance of a trusted service, which is why we focus on delivering exceptional results that exceed your expectations.
+                
+                At Just Blast It, your satisfaction is our top priority. We guarantee a seamless experience and outstanding results, whether you’re a residential customer or a construction firm. With years of experience and a commitment to quality, we transform surfaces and restore beauty to your property.</p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews">
+        <h2 class="section-title">Customer Reviews</h2>
+        <H3 class="section-subtitle">We love making customers happy</H3>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Just Blast It transformed our old stamped concrete patio into a stunning, freshly sealed surface. Professional and efficient service!"  <br><a class="section-subtitle">Sarah M, Homeowner, Aspen Woods</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Outstanding work removing rust from our construction equipment. Fast response time and competitive pricing. Will hire again!"  <br><a class="section-subtitle">James W, Site Supervisor, BuildRight Construction</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Perfect exposed aggregate finish on our pool deck. Clean work, no mess left behind."  <br><a class="section-subtitle">David & Lisa K, Homeowners, Springbank</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Used them for multiple projects. Their concrete seal removal is top-notch. My go-to sandblasting team!"  <br><a class="section-subtitle">Mike S, General Contractor, Sullivan Custom Homes</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Great work removing spalling concrete from our parkade. Professional team, thorough cleanup."  <br><a class="section-subtitle">Carlos R, Building Manager, The Renaissance Condos</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Restored our century-old brick facade beautifully. Worth every penny for their expertise!"  <br><a class="section-subtitle">Emily H, Historic Building Owner, Inglewood</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Needed graffiti removed from our commercial building ASAP. Just Blast It delivered same-day service. Excellent work!"  <br><a class="section-subtitle">Robert C, Property Manager, Downtown Calgary</a></p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>"Helped restore our concrete driveway after winter damage. Looks brand new with the fresh seal coating!"  <br><a class="section-subtitle">Jennifer & Tom B, Homeowners, Cranston</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area section -->
+    <section id="location">
+        <h2 class="section-title">Service Area</h2>
+        <H3 class="section-subtitle">Have truck, will travel! Based in Calgary, no job is too far</H3>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d321990.1333467452!2d-114.23792695820312!3d51.02777015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1635444334444!5m2!1sen!2sca"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Quote Bar -->
+     <div class="quote-bar" id="quotebar" aria-label="Open quote form" role="button" tabindex="0">
+        <p><b>Tell Us About Your Project</b></p>
+     </div>
+
+    <!-- Quote Form with Validation -->
+    <form class="quote-form" id="quoteform" onsubmit="handleSubmit(event)">
+        <div class="form-grid">
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    id="name"
+                    name="name" 
+                    placeholder="Name *" 
+                    required
+                    pattern="[A-Za-z ]{2,}"
+                    title="Name must contain at least 2 letters"
+                >
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone"
+                    placeholder="Phone *" 
+                    required
+                    pattern="[0-9]{10}"
+                    title="Please enter a valid 10-digit phone number"
+                >
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email"
+                    placeholder="Email *" 
+                    required
+                >
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group form-description">
+                <textarea 
+                    id="description"
+                    name= "description"
+                    placeholder="Project Description (250 words max)" 
+                    maxlength="1250"
+                    rows="4"
+                    required
+                ></textarea>
+                <div class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="submit-btn">
+                    <span>Get Quote</span>
+                    <div class="loading-spinner"></div>
+                </button>
+                <div class="confirmation-message" id="confirmationMessage"></div>
+            </div>
+        </div>
+    </form>
+
+    <!-- Jump to top -->
+    <div class="jump-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Contact Us</h3> 
+                <p>Hours: 9am-5pm Mon-Fri</p>
+                <p>Phone: (403)852-9877</p>
+                <p>Email: Gerald@justblastit.ca</p>
+                <p>Calgary, Alberta</p>
+            </div>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <div class="social-icons-grid">
+                <a href="https://www.instagram.com/justblastit/" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://www.facebook.com/JustBlastItLtd" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                    </a>
+                <a href="https://twitter.com/justblastit" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/@justblastit" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.tiktok.com/@justblastit" target="_blank" aria-label="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/yourwhatsappnumber" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/justblastit" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.pinterest.com/justblastit" target="_blank" aria-label="Pinterest">
+                    <i class="fab fa-pinterest"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </footer>
+     
+    <script>
+        // Fetch and Embed Instagram Assets
+        document.addEventListener("DOMContentLoaded", async function() {
+        async function embedInstagramVideos() {
+            const projectCards = document.querySelectorAll('.project-card[data-instagram-url]');
+            for (const card of projectCards) {
+                const instagramUrl = card.getAttribute('data-instagram-url');
+                const embedContainer = card.querySelector('.instagram-embed');
+
+                // Fetch the embed HTML from your backend
+                const embedHtml = await fetch(`/getInstagramEmbed?url=${encodeURIComponent(instagramUrl)}`).then(res => res.text());
+                embedContainer.innerHTML = embedHtml;
+
+                // Reinitialize Instagram embed scripts if needed
+                if (window.instgrm) {
+                    window.instgrm.Embeds.process();
+                }
+            }
+        }
+    
+            // Call the function to embed Instagram videos
+            embedInstagramVideos();
+        });
+        // Form handling function with emailJS integration
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+            const description = document.getElementById('description').value;
+
+            // Check if all required fields are filled
+            if (name && phone && email && description) {
+            // Show loading spinner
+            document.querySelector('.loading-spinner').style.display = 'inline-block';
+
+            emailjs.send('service_v8uvgmr', 'template_jh31qmg', {
+                name: name,
+                phone: phone,
+                email: email,
+                description: description
+            })
+            .then((response) => {
+                  console.log('SUCCESS!', response.status, response.text);
+                  alert('Thanks for the email! We will contact you shortly.');
+                  document.querySelector('.loading-spinner').style.display = 'none';
+                  event.target.reset(); // Reset form fields
+              }, (error) => {
+                  console.log('FAILED...', error);
+                  alert('Failed to send email. Please try again.');
+                  document.querySelector('.loading-spinner').style.display = 'none';
+              });
+          } else {
+              alert('Please fill all required fields.');
+          }
+      }
+
+      // Attach form submit event listener
+    document.getElementById('quoteform').addEventListener('submit', handleSubmit);
+        
+    // Navigation toggle
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+
+    // Quote bar and form positioning
+    const quotebar = document.getElementById('quotebar');
+    const quoteform = document.getElementById('quoteform');
+    const footer = document.getElementById('footer');
+
+    function updateQuoteBarPosition() {
+        const quoteBar = document.getElementById('quotebar');
+        const quoteForm = document.getElementById('quoteform');
+        const footer = document.getElementById('footer');
+        const footerRect = footer.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+    
+        if (footerRect.top <= viewportHeight) {
+            // Calculate distance from bottom of viewport to top of footer
+            const bottomOffset = viewportHeight - footerRect.top;
+            quoteBar.style.position = 'fixed';
+            quoteBar.style.bottom = `${bottomOffset}px`;
+        
+            if (quoteForm.classList.contains('active')) {
+                quoteForm.style.position = 'fixed';
+                quoteForm.style.bottom = `${bottomOffset + 50}px`; // 50px is quote bar height
+            }
+        } else {
+            // Reset to default fixed position
+            quoteBar.style.position = 'fixed';
+            quoteBar.style.bottom = '0';
+        
+            if (quoteForm.classList.contains('active')) {
+                quoteForm.style.position = 'fixed';
+                quoteForm.style.bottom = '50px';
+            }
+        }
+    }
+
+// Event listeners
+window.addEventListener('scroll', updateQuoteBarPosition);
+window.addEventListener('resize', updateQuoteBarPosition);
+document.addEventListener('DOMContentLoaded', updateQuoteBarPosition);
+
+// Toggle quote form
+document.getElementById('quotebar').addEventListener('click', () => {
+            document.getElementById('quoteform').classList.toggle('active');
+            updateQuoteBarPosition(); // Ensure proper positioning after toggle
+        });
+
+    // Jump to top button
+    const jumpTop = document.querySelector('.jump-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            jumpTop.classList.add('visible');
+        } else {
+            jumpTop.classList.remove('visible');
+        }
+    });
+
+    jumpTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+
+// Form validation function
+function validateForm() {
+    let isValid = true;
+    const inputs = document.querySelectorAll('#quoteform input, #quoteform textarea');
+
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            showError(input, input.validationMessage);
+            isValid = false;
+        }
+    });
+
+    return isValid;
+}
+
+// Error handling functions
+function showError(input, message) {
+    const errorDiv = input.parentElement.querySelector('.error-message');
+    input.classList.add('error');
+    errorDiv.textContent = message;
+}
+
+function clearErrors() {
+    const errors = document.querySelectorAll('.error-message');
+    const inputs = document.querySelectorAll('.error');
+    errors.forEach(error => error.textContent = '');
+    inputs.forEach(input => input.classList.remove('error'));
+}
+        // Cookie Consent
+        function checkCookieConsent() {
+            if (!localStorage.getItem('cookieConsent')) {
+                document.getElementById('cookieBanner').classList.add('show');
+            }
+        }
+
+        function acceptCookies() {
+            localStorage.setItem('cookieConsent', 'true');
+            document.getElementById('cookieBanner').classList.remove('show');
+        }
+
+        // Video Error Handling
+        const heroVideo = document.querySelector('.hero-video');
+        heroVideo.addEventListener('error', function(e) {
+            // Replace video with fallback image
+            const fallbackImage = document.createElement('img');
+            fallbackImage.src = 'path-to-fallback-image.jpg';
+            fallbackImage.alt = 'Sandblasting Service';
+            fallbackImage.classList.add('hero-video');
+            this.parentNode.replaceChild(fallbackImage, this);
+        });
+
+        // Keyboard Navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                // Close any open modals or menus
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.quote-form').classList.remove('active');
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            checkCookieConsent();
+            document.getElementById('quoteform').addEventListener('submit', handleSubmit);
+            
+            // Lazy load images
+            if ('loading' in HTMLImageElement.prototype) {
+                const images = document.querySelectorAll('img[loading="lazy"]');
+                images.forEach(img => {
+                    img.src = img.dataset.src;
+                });
+            } else {
+                // Load lazy loading polyfill
+                const script = document.createElement('script');
+                script.src = 'https://cdnjs.cloudflare.com/ajax/libs/loading-attribute-polyfill/1.5.4/loading-attribute-polyfill.min.js';
+                document.head.appendChild(script);
+            }
+        });
+});
+</script>
+</body>
+</html>
